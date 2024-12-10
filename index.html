@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-All">
+        <div class="container-Content">
+            <p style="text-align: right;" class="time">5:00</p>
+            <h1 class="name">SET TIMER</h1>
+            <br><br>
+            <div class="displayTime">
+                <div class="hours" style="display: flex; flex-direction: column;"><input type="number" maxlength="" placeholder="Input Hours" id="hours"><label for="" style="color: #e52a20;">Input Hours</label></div>
+                <!-- <div class="colon">:</div> -->
+                <div class="minutes" style="display: flex; flex-direction: column;"><input type="number" maxlength="2" placeholder="Input Minutes" id="minutes"><label for="" style="color: #e52a20;">Input Minutes</label></div>
+                <!-- <div class="colon">:</div> -->
+                <div class="seconds" style="display: flex; flex-direction: column;"><input type="number" maxlength="2" placeholder="Input Seconds" id="seconds"><label for="" style="color: #e52a20;">Input Seconds</label></div>
+            </div><br><br>
+            <div class="showCount">
+                <div class="hour">00</div>
+                <div class="minute">00</div>
+                <div class="second">00</div>
+            </div><br><br>
+            <p class="time-button">CLICK</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

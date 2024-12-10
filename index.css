@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container-All{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container-Content{
+    background-color: #b19667;
+    width: 50%;
+    padding: 20px;
+}
+.container-Content .time{
+    color: #d7251c;
+}
+.container-Content .name{
+    text-align: center;
+    color: white;
+}
+.displayTime{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.displayTime .hours, .minutes, .seconds{
+    /* background-color: white; */
+    /* padding: 30px; */
+    /* border-radius: 7px; */
+    /* border-bottom: 20px solid #d7251c; */
+}
+.displayTime .hours input, .minutes input, .seconds input{
+    padding: 11px;
+}
+.time-button{
+    text-align: center;
+    background-color:#d7251c;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 2px;
+}
+.time-button:hover{
+    background-color: #b19667;
+    transition: 2s ease;
+    border: 2px solid #d7251c;
+}
+.showCount{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0;
+}
+.showCount .hour, .minute, .second{
+    background-color: white;
+    border: 1px solid #d7251c;
+    border-bottom: 10px solid #d7251c;
+    padding: 25px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 828px){
+    .container-Content{
+        background-color: #b19667;
+        width: 80%;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 518px){
+    .container-Content{
+        background-color: #b19667;
+        width: 90%;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 518px){
+    .displayTime{
+        display: flex;
+        justify-content: center;
+        gap: 9px;
+        /* opacity: 0; */
+    }
+    .displayTime .hours, .minutes, .seconds{
+        /* background-color: white; */
+        /* padding: 20px; */
+        /* border-radius: 7px; */
+        /* border-bottom: 20px solid #d7251c; */
+    }
+}
