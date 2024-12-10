@@ -36,7 +36,8 @@ clickBtn.addEventListener('click', function () {
                 }
             }, 1000
             
-        )
+        );
+        clickBtn.style.display = 'none';
     };
     
 

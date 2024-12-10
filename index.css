@@ -57,6 +57,11 @@ body{
     gap: 40px;
     opacity: 0;
 }
+.showCount span{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
 .showCount .hour, .minute, .second{
     background-color: white;
     border: 1px solid #d7251c;
@@ -85,10 +90,14 @@ body{
         gap: 9px;
         /* opacity: 0; */
     }
-    .displayTime .hours, .minutes, .seconds{
-        /* background-color: white; */
-        /* padding: 20px; */
-        /* border-radius: 7px; */
-        /* border-bottom: 20px solid #d7251c; */
+}
+@media only screen and (max-width: 484px){
+    .container-Content{
+        background-color: #b19667;
+        width: 90%;
+        padding: 20px;
+    }
+    .showCount{
+        gap: 10px;
     }
 }
